@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #d9f7e5;
+}
+
+.app {
+  display: flex;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.sidebar {
+  background: #2b2b33;
+  border-radius: 12px;
+  padding: 16px;
+  width: 180px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.hint-text,
+.empty-text {
+  font-size: 12px;
+  text-align: center;
+  color: #aaa;
+}
+
+.history-item {
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.history-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+
+.history-item p {
+  font-size: 11px;
+  margin: 0;
+  color: #ddd;
+}
+
+.main-card {
+  flex: 1;
+  background: #1f1f26;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-card h1{
+    font: size 0.25rem;
+    margin:0;
+    font-family:Georgia, serif;
+    background:linear-gradient(90deg,#F7D774,#FFFFFF,#D9C6FF);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0 4px 10px rgba(0,0,0,.35);
+}
+
+.subtitle{
+    color:#d1d5db;
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+.artwork-title {
+  margin-bottom: 12px;
+}
+
+.attribute-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.pill {
+  background: #b8860b;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pill-banned {
+  background: #c0392b;
+}
+
+.ban-panel .pill {
+  display: block;
+  margin: 0 auto 8px;
+  width: fit-content;
+}
+
+.main-image {
+  max-width: 100%;
+  max-height: 280px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.discover-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.discover-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+.main-card{
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.main-image{
+  box-shadow:0 10px 25px rgba(0,0,0,.35);
+  transition:.3s;
+}
+
+.main-image:hover{
+  transform:scale(1.02);
+}
+
+.discover-btn{
+  transition:.25s;
+}
+
+.discover-btn:hover:not(:disabled){
+  transform:translateY(-3px);
+  background:#1d4ed8;
+}
+
+.pill{
+  transition:.2s;
+}
+
+.pill:hover{
+  transform:scale(1.08);
+}
+
+.history-item{
+  transition:.25s;
+}
+
+.history-item:hover{
+  transform:scale(1.05);
+}
+
+@media (max-width:900px){
+
+  .app{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .sidebar{
+    width:100%;
+    max-width:700px;
+  }
+
+}
